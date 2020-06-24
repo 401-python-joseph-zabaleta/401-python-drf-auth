@@ -22,7 +22,7 @@ Let’s move our API closer to production grade by adding Authentication and swi
   - mind the number of workers to avoid sluggishness
 - Warning You will run into styling issues when you switch over to Gunicorn.
   - On Django side you’ll need to properly handle static files.
-- [] Adjust docker-compose.yml so that data is persisted in a volume outside of container.
+- [x] Adjust docker-compose.yml so that data is persisted in a volume outside of container.
 
 ## User Acceptance Tests  
 - [x] Use tests from demo and adjust as needed for your project.
