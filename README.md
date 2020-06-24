@@ -10,23 +10,23 @@ Let’s move our API closer to production grade by adding Authentication and swi
 ## Feature Tasks and Requirements  
 
 ### Django
-- [] Add JWT Authentication to your API.
-  - [] Install needed libraries in project configuration and/or site settings.
-- [] Keep existing authentication so DRF Browsable API still usable.
-  - [] That includes keeping the styling
-  - [] Install needed libraries in project configuration and/or site settings.
+- [x] Add JWT Authentication to your API.
+  - [x] Install needed libraries in project configuration and/or site settings.
+- [x] Keep existing authentication so DRF Browsable API still usable.
+  - [x] That includes keeping the styling
+  - [x] Install needed libraries in project configuration and/or site settings.
 
 ### Docker  
-- [] Create a boilerplate Dockerfile and docker-compose.yml so you don’t need to start from scratch each time.
-- [] Switch to using Gunicorn instead of Django’s built in development server.
+- [x] Create a boilerplate Dockerfile and docker-compose.yml so you don’t need to start from scratch each time.
+- [x] Switch to using Gunicorn instead of Django’s built in development server.
   - mind the number of workers to avoid sluggishness
 - Warning You will run into styling issues when you switch over to Gunicorn.
   - On Django side you’ll need to properly handle static files.
 - [] Adjust docker-compose.yml so that data is persisted in a volume outside of container.
 
 ## User Acceptance Tests  
-- [] Use tests from demo and adjust as needed for your project.
-- [] Ensure tests pass
+- [x] Use tests from demo and adjust as needed for your project.
+- [x] Ensure tests pass
 
 ## Dependencies  
 - python = "^3.8"
@@ -50,3 +50,11 @@ This project is under the MIT License.
 ## Version History  
 - 1.0.0 20200624
     - Initial files created.  
+- 1.0.1 20200624
+    - Local Host server is working
+- 1.0.2 20200624
+    - Production Server is working
+- 1.0.3 20200624
+    - Docker working, still using sql lite
+- 1.0.4 20200624
+    - Docker working with postgres still need volumes
